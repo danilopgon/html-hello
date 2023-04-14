@@ -20,7 +20,7 @@
 <body>
     <nav class="navbar navbar-expand bg-body-tertiary ">
         <div class="container-fluid ">
-            <a class="navbar-brand fw-semibold" href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
+            <a class="navbar-brand fw-semibold ms-4" href="#"> <i class="fa-brands fa-instagram"></i> Instagram</a>
             <ul class="navbar-nav ms-auto">
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-success mx-3" data-bs-toggle="modal"
@@ -34,32 +34,40 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h1>
+                                <h1 class="modal-title fs-5 fw-semibold" id="staticBackdropLabel">Create a new post</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                ...
+                                <label for="Caption" class="form-label fw-semibold">Caption:</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Add the caption of your post here"></textarea>
+                                <div class="d-grid gap-2 d-flex justify-content-start mt-3 mb-3">
+                                    <button class="btn btn-light border rounded" type="button"><i class="fa-solid fa-camera"></i></button>
+                                    <button class="btn btn-light border rounded" type="button"><i class="fa-solid fa-location-dot"></i></button>
+                                  </div>
+                                
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Understood</button>
+                                <button type="button" class="btn btn-success">Publish</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
 
-
+                <!-- Expanded toggle -->
                 <div class="btn-group">
-                    <button type="button" class="btn btn-secondary dropdown-toggle mx-1 " data-bs-toggle="dropdown"
+                    <button type="button" class="btn btn-secondary dropdown-toggle ms-1 me-4" data-bs-toggle="dropdown"
                         data-bs-display="static" aria-expanded="false">
                         <i class="fa-solid fa-gear"></i>
                     </button>
+                    <!-- Expanded menu -->
                     <ul class="dropdown-menu dropdown-menu-end">
-                        <li><a class="dropdown-item" href="#">Menu item</a></li>
-                        <li><a class="dropdown-item" href="#">Menu item</a></li>
-                        <li><a class="dropdown-item" href="#">Menu item</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                        <li><a class="dropdown-item pb-3" href="#">Privacy and Data</a></li>
+                        <li><a class="dropdown-item py-3 border-top text-danger" href="#">Log Out</a></li>
                     </ul>
                 </div>
             </ul>
@@ -142,11 +150,7 @@
                                     class="img-fluid object-fit-cover" alt="A raccoon"></div>
                         </div>
                     </div>
-
-
-
                 </div>
-
             </div>
 
             <!-- Vista feed -->
@@ -200,16 +204,10 @@
 
                                 </div>
                             </div>
-
                         </div>
-
-
-
                     </div>
-
                 </div>
             </div>
-
         </div>
 
         <!-- Bootstrap JS -->
